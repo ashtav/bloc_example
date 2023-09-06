@@ -1,0 +1,7 @@
+
+# Description
+
+Dalam proyek ini, kita menerapkan konsep modularisasi untuk mengorganisasi kode dengan lebih baik
+dan meningkatkan pemeliharaan serta pengembangan aplikasi. Pendekatan ini memungkinkan kita untuk
+memisahkan fungsionalitas aplikasi menjadi modul-modul yang independen,
+masing-masing bertanggung jawab atas fitur atau komponen tertentu.
