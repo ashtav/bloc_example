@@ -14,8 +14,12 @@ class MainPageView extends StatelessWidget {
       ),
       body: LzListView(children: [
         Column(
-          children:
-              ['Counter', 'Users (Static)', 'Todos (API)'].generate((item, i) {
+          children: [
+            'Counter - Cubit',
+            'Users (Static) - Cubit',
+            'Todos (API) - Cubit',
+            'Activity - Bloc'
+          ].generate((item, i) {
             return InkTouch(
               onTap: () {
                 switch (i) {
@@ -30,7 +34,9 @@ class MainPageView extends StatelessWidget {
                   case 2:
                     context.push(Paths.todos);
                     break;
+                    
                   default:
+                    context.push(Paths.activity);
                 }
               },
               padding: Ei.all(20),

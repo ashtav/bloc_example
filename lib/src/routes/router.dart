@@ -1,3 +1,4 @@
+import 'package:bloc_example/src/modules/activity/presentation/pages/activity_page.dart';
 import 'package:bloc_example/src/modules/counter/counter.dart';
 import 'package:bloc_example/src/modules/mainpage/view/mainpage.dart';
 import 'package:bloc_example/src/modules/todos/presentation/pages/todos_page.dart';
@@ -21,10 +22,13 @@ final GoRouter router = GoRouter(
         path: Paths.users,
         builder: (BuildContext context, GoRouterState state) =>
             const UsersPage()),
-
-            GoRoute(
+    GoRoute(
         path: Paths.todos,
         builder: (BuildContext context, GoRouterState state) =>
             const TodosPage()),
+    GoRoute(
+        path: Paths.activity,
+        builder: (BuildContext context, GoRouterState state) =>
+            const ActivityPage()),
   ],
 );
